@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import SimpleList from "@/app/components/simpleList";
 
 export default function ServiceManager() {
   const requisitos = [
@@ -73,11 +74,12 @@ export default function ServiceManager() {
 
       <section className="max-w-md mb-8 text-center">
         <h2 className="text-xl font-semibold text-[#007BFF] mb-3">Requisitos</h2>
-        <ul className="text-gray-300 text-sm text-left list-disc list-inside space-y-1">
+        {/*} <ul className="text-gray-300 text-sm text-left list-disc list-inside space-y-1">
           {requisitos.map((req, i) => (
             <li key={i}>{req}</li>
           ))}
-        </ul>
+        </ul> */}
+        <SimpleList items={requisitos} />
       </section>
 
       <a
