@@ -5,7 +5,7 @@ export default function ServiceManager() {
   const requisitos = [
     "WhatsApp Business API configurada. É por nossa conta.",
     "Banco de dados MongoDB ativo.*1 Terceirizado e cobrado por utilização",
-    "Seviço de implatação em nuvem.*1.",
+    "Serviço de implantação em nuvem.*1.",
     "Serviço de gerenciamento SynapTech para integração da infraestrutura.",
     "*1 - Serviços Terceirizados e cobrado por utilização no cartão de crédito.",
   ];
@@ -18,10 +18,10 @@ export default function ServiceManager() {
     "Notificação automática é enviada para a equipe responsável.",
     "Equipe verifica cada documento para aprovação.",
     "Sistema solicita re-envio de documentos rejeitados indicando o motivo.",
-    "Aprovação de todos os documentos solicitado.",
+    "Aprovação de todos os documentos solicitados.",
     "Solicitação é concluída e cliente é notificado.",
     "Equipe inicia o serviço solicitado.",
-    "Cliente acompanhar o progresso via WhatsApp ou e-mail.",
+    "Cliente acompanha o progresso via WhatsApp ou e-mail.",
     "Serviço é concluído e cliente recebe uma notificação.",
     "Sistema envia qrCode para pagamento via PIX.",
     "Confirmação de pagamento é recebida e registrada.",
@@ -64,10 +64,10 @@ export default function ServiceManager() {
       </section>
 
       <section className="max-w-md mb-8 text-center">
-        <h2 className="text-xl font-semibold text-[#007BFF] mb-3">Requisitos</h2>
+        <h2 className="text-xl font-semibold text-[#007BFF] mb-3">Fluxo de Trabalho</h2>
         <ul className="text-gray-300 text-sm text-left list-disc list-inside space-y-1">
-          {fluxo.map((req, i) => (
-            <li key={i}>{req}</li>
+          {fluxo.map((flx, i) => (
+            <li key={i}>{flx}</li>
           ))}
         </ul>
       </section>

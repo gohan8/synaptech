@@ -1,6 +1,8 @@
 'use client'
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import ResponsiveTable from "./components/ResponsiveTable";
+import { linkData } from "./pageData";
 
 const emailLink = process.env.NEXT_PUBLIC_EMAIL_LINK || "";
 
@@ -35,7 +37,7 @@ export default function Home() {
       title: "Gerenciamento de Serviços",
       img: "/project2.jpg",
       desc: "Plataforma de controle e monitoramento de serviços corporativos em nuvem.",
-      link: "service-manager",
+      link: "serviceManager",
     },
     {
       title: "Sistema de vendas por Whatsapp Business",
@@ -48,22 +50,24 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#1E1E1E] text-white flex flex-col items-center px-4 py-8">
       <header className="flex flex-col items-center mb-8 text-center">
-        <img src="/synaptech-logo.png" alt="SynapTech Logo" className="w-24 mb-4" />
+        <img src="/SynapTech Logo.png" alt="SynapTech" className="w-24 mb-4" />
         <h1 className="text-3xl font-bold text-[#00E0FF]">SynapTech</h1>
         <p className="text-gray-300 mt-2 text-sm">
-          IA, automação e nuvem em perfeita sintonia com sua empresa.
+          IA, automatização e nuvem em perfeita sintonia com sua empresa.
         </p>
       </header>
 
       <section className="max-w-md text-justify mb-10">
         <h2 className="text-xl font-semibold text-[#007BFF] mb-2">Sobre a SynapTech</h2>
         <p className="text-gray-300 text-sm leading-relaxed">
-          A SynapTech oferece soluções de automação de tarefas oferecendo consultoria 
-          para implantação na infraestrutura em nuvem, utilizando tecnologias modernas
-           como Python, Node.js e MongoDB.
+          A SynapTech projeta e desenvolve soluções para automatizar tarefas oferecendo consultoria 
+          para implantação na infraestrutura em nuvem, utilizando IA e tecnologias modernas
+           como:
         </p>
+        <ResponsiveTable data={linkData} />
+          
         <p className="text-gray-300 text-sm leading-relaxed">
-          Também tabalha com desenvolvimento de produtos de software projetodos
+          Também trabalha com desenvolvimento de produtos de software projetodos
            de acordo com as necessidades de cada cliente, ou dos requisitos de seus
            projetos.
         </p>
